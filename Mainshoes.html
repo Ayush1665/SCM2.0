@@ -1,0 +1,295 @@
+<html >
+<head>
+    <title>Home page</title>
+
+    <style type="text/css">
+        #outer-div {
+            width: 900px;
+            background-color: pink;
+            height: 900px;
+            margin: auto;
+        }
+        #title-div {
+            width: inherit;
+            background-color: rgb(110, 52, 124);
+            height: 60px;
+        }
+        #logo {
+            height: 45px;
+            width: 40px;
+            border: 1px black solid;
+            margin-top: 5px;
+            margin-left: 10px;
+            float: left;
+            background-size: contain;
+            transition: ease all 1s;
+        }
+
+      
+
+        #logo2 {
+            height: 40px;
+            width: 40px;
+            border: 1px black solid;
+            margin-top: 5px;
+            margin-right: 10px;
+            float: left;
+            
+            background-color: white;
+            background-size: contain;
+            float: right;
+            transition: ease all 1s;
+            border-radius: 50%;
+
+        }
+
+        #logo2:hover {
+            transform: scale(1.2);
+            transition: ease all 1s;
+        }
+
+        #site-name2 {
+            text-align: center;
+            margin-left: 60px;
+            margin-top: 20px;
+            font-family: fantasy;
+            font-size: 40px;
+            float: center;
+            color: white;
+        }
+
+        #menu-div {
+            width: inherit;
+            height: 50px;
+            background-color: black;
+        }
+
+        /Parent Selector/
+        #menu-div ol {
+            list-style: none;
+            float: left;
+            margin-top: 5px;
+        }
+
+        #menu-div ol li {
+            float: left;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background-color: white;
+            margin-left: 10px;
+            border-radius: 10px 10px 10px 10px;
+            transition: ease all .5s;
+
+
+        }
+
+        #menu-div ol li:hover {
+            background-color: black;
+            /*	border: 1px yellow solid;;*/
+            background-color: yellow;
+            color: purple;
+            cursor: pointer;
+            border-radius: 20px 0px 20px 0px;
+            transition: ease all .5s;
+        }
+
+        #title-pic {
+            width: inherit;
+            height: 500px;
+            background-color: white;
+            background-size: contain;
+
+            background-repeat: no-repeat;
+            background-image: url(pics/arman.jpg.);
+        }
+
+        #parent {
+            width: inherit;
+            height: 550px;
+            background-color: black;
+
+        }
+
+        #child-left {
+            width: 200px;
+            height: inherit;
+            background-color: darkslategrey;
+            float: left;
+        }
+
+        #child-center {
+            width: 400px;
+            height: inherit;
+            background-color: gray;
+            float: left;
+        }
+
+        #child-right {
+            width: 300px;
+            height: inherit;
+            background-color: orangered;
+            float: left;
+        }
+
+        .smedia {
+            margin: auto;
+            width: 150px;
+            height: 150px;
+            background-color: white;
+            margin-bottom: 10px;
+            border-radius: 50%;
+            background-image: url(pics/parmish%20verma.jfif);
+            background-size: 80%;
+            background-repeat: no-repeat;
+            background-position: center;
+            border: 1px black solid;
+            transition: ease all 1s;
+
+        }
+
+        .smedia:hover {
+            /*	box-shadow: 0px 15px 5px black;*/
+            /*	box-shadow: 10px 10px 20px black;*/
+            box-shadow: 0px 0px 10px 5px black;
+            /* for same shadow on all sides*/
+            transform: scale(1.1) rotate(360deg);
+            transition: ease all 1s;
+        }
+
+        .smedia2 {
+            margin: auto;
+            width: 150px;
+            height: 150px;
+            background-color: white;
+            margin-bottom: 10px;
+            border-radius: 50%;
+            background-image: url(pics/sharry%20maan.jfif);
+            background-size: 80%;
+            background-repeat: no-repeat;
+            background-position: center;
+            border: 1px black solid;
+            transition: ease all 1s;
+
+        }
+
+        .smedia2:hover {
+        
+            box-shadow: 0px 0px 10px 5px black;
+          
+            transform: scale(1.1) rotate(360deg);
+            transition: ease all 1s;
+        }
+
+        .smedia3 {
+            margin: auto;
+            width: 150px;
+            height: 150px;
+            background-color: white;
+            margin-bottom: 10px;
+            border-radius: 50%;
+            background-image: url(pics/mankirt%20aulakh.jfif);
+            background-size: 80%;
+            background-repeat: no-repeat;
+            background-position: center;
+            border: 1px black solid;
+            transition: ease all 1s;
+
+        }
+
+        .smedia3:hover {
+            /*	box-shadow: 0px 15px 5px black;*/
+            /*	box-shadow: 10px 10px 20px black;*/
+            box-shadow: 0px 0px 10px 5px black;
+            /* for same shadow on all sides*/
+            transform: scale(1.1) rotate(360deg);
+            transition: ease all 1s;
+        }
+
+        .centerpic1 {
+            background-image: url(pics/neha-kakkar.jpg);
+            background-size: contain;
+            width: 400px;
+            ;
+            height: 250px;
+            background-repeat: no-repeat;
+        }
+
+        .centerpic2 {
+            background-image: url(pics/istockphoto-1160645050-170667a.jpg);
+            background-size: contain;
+            width: 400px;
+            height: 400px;
+            background-repeat: no-repeat;
+            margin: 0px;
+        }
+
+        .rightpic3 {
+            background-image: url(pics/download.jfif);
+            width: 300;
+            height: 550;
+            background-size: contain;
+        }
+
+
+
+        #arrow {
+
+            background-color: black;
+            color: white;
+            width: 30px;
+            padding: 10px;
+            font-weight: bold;
+            font-family: fantasy;
+
+            text-align: center;
+            border-radius: 50%;
+
+            /Main/
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+        .b1{
+            
+            text-align: right;
+            background-color: rgb(38, 188, 199);
+            color: rgb(2, 2, 2);
+            cursor: pointer;
+            padding: 6px;
+            margin-top: 10px;
+            font-size: 25px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body >
+    <div id="outer-div">
+        <div id="title-div">
+            
+                <div id="logo"></div>
+           
+            <div id="site-name2">SHOES HUB</div>
+            <div id="logo2"></div>
+
+        </div>
+        
+    <div id="div1">
+        <center>
+        <br>
+        <button class ="b1">Home</button> &ensp;&ensp;&ensp;
+        <button class ="b1">Menu</button> &ensp;&ensp;&ensp;
+        <button class ="b1">Cart</button> &ensp;&ensp;&ensp;
+        <button class ="b1">Reach us</button> &ensp;&ensp;&ensp;
+        <button class ="b1">Contact Us</button>
+        </center>
+    </div>
+</div>
+        <div id="title-pic">
+        </div>
+            </div>
+        </div>
+    </div>
+</body></html>

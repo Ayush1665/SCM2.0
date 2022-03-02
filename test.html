@@ -1,0 +1,78 @@
+<html>
+
+<head>
+    <style>
+        .main {
+            height: 80vh;
+            width: 80vw;
+            background-image: linear-gradient(to right, red, orange, pink, yellow, green);
+            margin: auto;
+        }
+
+        .submit {
+            background-color: yellow;
+        }
+        .submit:hover{
+            color: white;
+        }
+    </style>
+</head>
+
+<body style="background-color:pink;">
+    <div class="main">
+        <h1
+            style="background-color: cyan;border: blue 1px solid;text-align: center;text-shadow: -5px -5px red;margin:0;">
+            Welcome to Chitkara University!!</h1>
+        <h1
+            style="background-color: cyan;border: blue 1px solid;text-align: center;text-shadow: -5px -5px red ;margin: 0;">
+            Survey form</h1>
+        <div class="main" style="border: blue dashed 1px;border-left:green dashed 1px;border-right:red dashed 1px;">
+            <p>Please Fill The Survey Form!!!</p>
+            <form style="width: 100%;">
+                <table style="width: 100%;">
+                    <tr>
+                        <td>*Name:</td>
+                        <td><input type="text" placeholder="Enter Your Name"></td>
+                    </tr>
+                    <tr>
+                        <td>*Email:</td>
+                        <td><input type="email" placeholder="Enter Your Email"></td>
+                    </tr>
+                    <tr>
+                        <td>*Age:</td>
+                        <td><input type="number" placeholder="18"></td>
+                    </tr>
+                    <tr>
+                        <td>Which option best describe your current role in Chitkara?</td>
+                        <td><select>
+                                <option>student</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>*How likely is that you would recommend Chitkara University to a friend?
+                        </td>
+                        <td><input type="checkbox">Definitely</input><br>
+                            <input type="checkbox">Maybe
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>What do you like most in Chitkara University:</td>
+                        <td><select>
+                                <option>Select an option</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>Things that should be improved in future(Check all that apply):</td>
+                        <td><input type="checkbox">Food Quality<br>
+                            <input type="checkbox">Parking Area
+                        </td>
+                    </tr>
+                </table>
+                <P>
+                    <center> <input type="submit" class="submit"> </center>
+                </P>
+            </form>
+        </div>
+</body>
+
+</html>

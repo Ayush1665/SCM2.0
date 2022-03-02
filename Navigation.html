@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Navigation</title>
+        <style>
+            .navbar{
+                Background-color:Black;
+                Border-radius:50px;
+            }
+            .navbar ul{
+                overflow: auto;
+            }
+            .navbar li{
+                float: left;
+                list-style: none;
+                margin: 10px 10px;
+            }
+            .navbar li a{
+                padding: 10px 10px;
+                text-decoration:none;
+                color:White;
+            }
+            .navbar li a:hover{
+                color:yellow;
+            }
+            .search{
+                float:right;
+                color:white;
+                padding:12px 75px;
+            }
+            .navbar input{
+                border: 2px solid black;
+                border-radius: 4px;
+                padding: 3px 17px;
+                width:200px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Sign</a></li>
+                    <div class="search">
+                        <input type="text" name="search" id="search" placeholder="Search"> 
+                    </div>
+                </ul>
+            </nav>
+        </header>
+    </body>
+</html>

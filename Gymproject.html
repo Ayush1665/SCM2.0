@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gym</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        /* CSS Reset */
+        body{
+            color:white;
+            margin:0px;
+            padding:0px;
+            background: url(https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Z3ltfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+            font-style: 'Montserrat', sans-serif;
+            /* height:5000px; */
+            
+        }
+        .left{
+            display:inline-block;
+            position:absolute;
+            left:34px;
+            top:20px;
+            /* border:2px solid red; */
+        }
+        .left img{
+                width:90px;
+                padding:10px;
+        }
+        .left div{
+            text-align: center;
+        }
+        .mid{
+            display:Block;
+            width: 33%;
+            margin: 23px auto;
+            /* border: 2px solid green; */
+        }
+        .right{
+            position:absolute;
+            right:34px;
+            top:20px;
+            display: 12px inline-block;
+            /* border:2px solid yellow; */
+        }
+        .navbar{
+            display:inline-block
+        }
+        .navbar li{
+            display:inline-block;
+            font-size: 19px;
+        }
+        .navbar li a{
+            color:white;
+            text-decoration: none;
+            padding:30px 5px; 
+        }
+        .navbar li a:hover,.navbar li a.active{
+            text-decoration:underline;
+            cursor: pointer; 
+            color:grey;
+        }
+        .btn{
+            margin:15px 9px;
+            background-color:black;
+            color:White;
+            Border:2px solid grey;
+            border-radius: 10px;
+            font-size: 15px;
+            cursor:pointer;
+        }
+        .btn:hover{
+            background-color:grey;
+        }
+        .container{
+            border:2px solid white;
+            margin:120px 700px 10px 20px;
+            padding:50px 90px;
+            border-radius:10px;
+            width:30%;
+        }
+    .container h1{
+        font-size:22px;
+        text-align:center;
+    }
+    .form input{
+        text-align: center;
+        display:Block;
+        font-size:25px;
+        width:220px;
+        padding:4px;
+        border:2px solid #000000;
+        margin:15px auto;
+        border-radius: 20px;
+    }
+    .container button{
+        display:Block;
+        width:40%;
+        margin:auto;
+
+    }
+    </style>
+    </head>
+    <body>
+        <header class="header">
+            <!-- left Box for logo -->
+            <div class="left">
+            <img src="data:image/jpeg;base64,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" alt="">
+                <div>Chopra's</div>
+            </div>
+            <!-- Mid box for nav bar -->
+            <div class="mid">
+                    <ul class="navbar">
+                            <li><a href="#" class="active">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Login/Signup</a></li>
+                    </ul>
+            </div>
+            <!-- right box for buttons -->
+            <div class="right">
+                <Button class="btn">Call Us Now</Button><Button class="btn">About us</Button>
+            </div>
+            <div class="container">
+                <h1>Join the best Gym of Delhi now</h1>
+                <form action="noaction.php">
+                    <div class="form">
+                      <input type="text" name="" placeholder="Enter your name">  
+                    </div>
+                    <div class="form">
+                            <input type="text" name="" placeholder="Enter your locality">  
+                    </div>
+                          <div class="form">
+                                <input type="text" name="" placeholder="Enter your Mobile no.">  
+                            </div>
+                            <div class="form">
+                                    <input type="text" name="" placeholder="Enter your D.O.B.">  
+                            </div>
+                            <Button class="btn">Submit</Button>
+                </form>
+            </div>
+        </header>
+    </body>
+</html>

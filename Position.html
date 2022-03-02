@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+    <title>Position</title>
+    <style>
+        /* CSS position:static(by default),relative,absolute,fixed,sticky; */
+        .container{
+            border:2px solid black;
+            background-color: khaki;
+            height: 10000px;
+        }
+        .box{
+            display: inline-block;
+            border:2px solid red;
+            width:150px;
+            height:250px;
+            margin:2px;
+        }
+        #box3{
+            /* position:relative; position: relative:means relative to its normal position and will a gap at its normal position */
+            /* position:absolute;means relative to the position of its first parent  */
+            /* position:fixed;means relative to the browser window */
+            /* The position: fixed mean fixed to the viewport. We tell it where to position itself (top, bottom, right, or left) and it will stay there when user scrolling. */
+            /* Meanwhile, when using position: sticky it won't affect until we define offset, like top: 10px. So the element will scroll like others until it reaches the offset and then stay on its position. And it stay within its parent, once the parent scroll off the page it leaves with it. */
+            position:sticky;
+            Top:4px;
+        }
+    </style>
+</head>
+<Body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3.Chat with us</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</Body>

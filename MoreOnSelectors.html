@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>More on Selectors</title>
+        <style>
+        h1{
+            border:2px solid black;
+            background-color:red;
+            color:white;
+            text-align: center;
+            font-weight: bold;
+        }
+        /* If p is contained by any li which is contained by div  */
+        /* div li p{
+            border:2px solid green;
+            background-color:black;
+            color:white;
+            text-align: center;
+            font-weight: bold;            
+        } */
+        /* If p is right inside div then this CSS will be applied */
+        /* div > p{
+            border:2px solid green;
+            background-color:black;
+            color:white;
+            text-align: center;
+            font-weight: bold;             */
+        }
+        /* If p is right after div i.e. p is the next sibling of div */
+        /* div + p{
+            color:white;
+            background-color: tomato;
+        } */
+
+        </style>
+    </head>
+    <body>
+        <h1>More On Selectors</h1>
+        <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item"><p>This is another paragraph inside li</p></li>
+                <p>This is a para inside ul</p>
+            </ul>
+            <p>This is a paragraph</p>
+        </div>
+        <p>This is another paragraph</p>
+        </div>
+        <p>This is outermost paragraph</p>
+    </body>
+</html>

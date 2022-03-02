@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Visibility and z-index</title>
+    <style>
+        .box{
+            height: 200px;
+            width:200px;
+            border:2px solid black;
+        }
+        #box1{
+            background-color: green;
+            z-index:35px;
+            /* More the z-index more it will cover the other boxes */
+        }
+        #box2{
+            /* display:none; will hide the element and the space */
+            /* visibility: hidden;Will hide the element but will show its empty space */
+            /* z-index: will work only for position:relative,absolute,sticky,fixed; */
+            z-index:34px;
+            background-color: red;
+        }
+        #box3{
+            background-color: yellow;
+        }
+        #box4{
+            background-color:brown;
+        }
+    
+    </style>
+    </head>
+    <body>
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+    </body>
+</html>

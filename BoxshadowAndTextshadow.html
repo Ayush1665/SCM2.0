@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Box Shadow and Text Shadow</title>
+    </head>
+    <style>
+    .container{
+        display:flex;
+    }
+    .card{
+        padding:23px 12px;
+        border:2px solid red;
+        margin:10px 10px;
+        background-color: burlywood;
+
+        /* box-shadow: offset-x offset-y color; */
+
+        /* (positive sign means the shadow will be down-side) */
+        /* box-shadow:5px 10px green; */
+
+        /* (Negative sign means the shadow will be Upside) */
+        /* box-shadow:-5px -10px green; */
+
+        /* box-shadow: offset-x offset-y  blurr radius color; */
+        /* the last one that is 9px is called Blurr radius */
+        box-shadow:5px 10px 9px 30px green;
+
+        /* box-shadow: offset-x offset-y Blurr radius Spread radius Color; */
+        /* the last one that is 30px is called Spread radius */
+        box-shadow:5px 10px 9px 30px rgba(34,184,184, 0.5);
+        /* alpha decides the darkness */
+
+        /* inset=increases the color inside the box */
+        box-shadow: inset 3px 5px green,4px 6px red;
+        /* (multiple box shadows) */
+
+    }
+    .card h2{
+        /* box-shadow: offset-x offset-y color; */
+        /* text-shadow: 3px 3px white; */
+
+        /* box-shadow: offset-x offset-y  Blurr radius color; */
+        text-shadow: 3px 3px 3px white;
+    }
+    </style>
+    <body>
+        <div class="container">
+            <div class="card" id="card-1">
+              <h2>C++ course</h2>  
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque dolores atque ipsa mollitia quidem tempora, optio et natus hic, saepe ducimus asperiores, nisi doloribus fuga consequuntur eos autem sunt. Enim.</p>
+            </div>
+            <div class="card" id="card-2">
+                <h2>C course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto neque doloribus magni voluptatum quas nemo, vel sit ipsa exercitationem accusamus omnis, aliquam dignissimos. Sunt pariatur consequuntur corrupti consectetur velit quo!</p>
+            </div>
+            <div class="card" id="card-3">
+                <h2>JAVA course</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis natus necessitatibus deleniti, officia voluptatem ipsum. Perspiciatis fuga sapiente vero praesentium velit porro cumque sint obcaecati minima? Omnis nam itaque et a dolor voluptas ab?</p>
+            </div>
+        </div>
+    </body>
+</html>

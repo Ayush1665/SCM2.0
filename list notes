@@ -1,0 +1,4 @@
+lists:-
+1.Unordered list<ul type="square">(There are three bullet types:-disc(default),circle,square)
+2.Ordered list
+3.Describe list(dl,dd,dt)

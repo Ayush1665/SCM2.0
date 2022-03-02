@@ -1,0 +1,106 @@
+body {
+  font-family: sans-serif;
+  background-image: url(toni-zaat-MP56QwyNC8c-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* width: 100%; */
+  background: #3494e6;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right,
+      #ec6ead,
+      #3494e6);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right,
+      #ec6ead,
+      #3494e6);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.container {
+  margin-top: 10%;
+  height: 470px;
+  width: 380px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  /* height: 10px; */
+  text-align: center;
+  padding-top: 8px;
+}
+
+.header h1 {
+  color: white;
+  font: size 45px;
+  margin-bottom: 80px;
+}
+
+.main {
+  text-align: center;
+
+}
+
+.main input,
+button {
+  width: 300px;
+  height: 40px;
+  outline: none;
+  padding-left: 40px;
+  box-sizing: border-box;
+  font-size: 15px;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.main button {
+  padding-left: 0px;
+  background-color: #83acf1;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.main button:hover,
+input:hover {
+  box-shadow: 2px 2px 5px #555;
+  background-color: 7799d4;
+}
+
+.main input:hover {
+  box-shadow: 2px 2px 5px #555;
+  background-color: #ddd;
+}
+
+.main span {
+  position: relative;
+}
+
+.main i {
+  position: absolute;
+  left: 15px;
+  color: #333;
+  font-size: 16px;
+  top: 2px;
+}
+
+.yugam {
+  color: black;
+}
+
+#newone {
+  border-radius: 50px;
+  background: rgb(224 161 216);
+  box-shadow: insert 28px 28px 56px white, inset -28px -28px 56px #000000;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+a:-webkit-any-link {
+  color: white;
+  cursor: pointer;
+  text-decoration: none;

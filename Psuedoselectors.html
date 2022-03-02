@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<HTML>
+    <HEAD>
+        <title>psuedo selectors & more designing</title>
+        <style>
+            .container{
+                border:2px solid red;
+                background-color: limegreen;
+                padding:34px;
+                margin:34px auto;
+                width:666px;
+            }
+            a{
+                text-decoration: none;
+                color:black;
+            }
+            a:hover{
+                /* color:black; */
+                background-color: yellow;
+            }
+            a:visited{
+                background-color:orange;
+            }
+            a:active{
+                background-color:darkblue;
+            }
+            .btn{
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-weight:bold;
+                color:black;
+                background-color: crimson;
+                padding:6px;
+                border:none;
+                cursor:pointer;
+                font-size:13px;
+                border-radius: 4px;
+            }
+            .btn:hover{
+                background-color: yellow;
+                border:2px solid black;
+            }
+
+        </style>
+    </HEAD>
+    <BODY>
+        <div class="container" id="cont1">
+            <h3>This is my heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ipsum vitae nam modi dolor aperiam non id doloremque. Aut, at numquam tempora expedita ducimus mollitia perferendis. Accusantium, magni consequuntur! Quidem explicabo consequatur facilis dolorum.</p>
+            <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwijvpfugbv1AhWCyDgGHbE2A30QFnoECAcQAQ&url=https%3A%2F%2Fwww.google.co.in%2F&usg=AOvVaw1JJPJSW95uLD_bTipFUwd8" class="btn">Read more</a>
+            <button class="btn">Contact Us</button>   
+    </BODY>
+</HTML>
